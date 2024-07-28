@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="home">
+        <div class="heading" id="heading">
+            <img src="testbook-logo.png" alt="not found">
+            <h1>Hello user!</h1>
+            <h3>Enter your name to continue the quiz</h3>
+                <input class="name" type="text" id="username" placeholder="ENTER YOUR NAME" required>
+                <button onclick="enterUser()" class="enter">Enter</button>
+                <p>You"II have 10sec to answer each question</p>
+            <hr>
+          
+            <h1>Select Category</h1>
+            <div class="buttons">
+                <button class="Questions" onclick="selectCategory('Pipes and Cisterns')">Pipes and Cisterns</button>
+                <button class="Questions" onclick="selectCategory('Probability')">Probability</button>
+                <button class="Questions" onclick="selectCategory('Problems on Age')">Problems on Age</button>
+                <button class="Questions" onclick="selectCategory('Profit and Loss')">Profit and Loss</button>
+            </div>
+            
+        </div>
+
+        <div id="quiz" class="hidden">
+            <h2 id="section-heading"></h2>
+            <div id="quiz-header">
+                <span id="timer">Time: 10</span>
+                <span id="score">Score: 0</span>
+            </div>
+            <div id="question-container"></div>
+            <button  class="enter" onclick="nextQuestion()">Next Question</button>
+        </div>
+    
+        <div id="result" class="hidden">
+            <h1>Quiz Results</h1>
+            <p id="result-username"></p>
+            <p>Total Time: <span id="total-time"></span></p>
+            <p>Total Questions: <span id="total-questions"></span></p>
+            <p>Attempt Questions: <span id="attempted-questions"></span></p>
+            <p>Correct Answers: <span id="correct-answers"></span></p>
+            <p>Wrong Answers: <span id="wrong-answers"></span></p>
+            <p>Percentage: <span id="percentage"></span>%</p>
+            <button  class="enter" onclick="startAgain()">Start Again</button>
+            <button  class="enter" onclick="backToHome()">Go to Home</button>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

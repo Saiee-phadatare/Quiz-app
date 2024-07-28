@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    text-align: center;
+    margin: 2rem 16rem;
+    background-color: rgb(212, 212, 212);
+}
+
+.container{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container img{
+    height: 110px;
+    width: 110px;
+}
+
+.container h1{
+    color: rgb(0, 140, 255);
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+.container .name{
+    width: 300px;
+    height: 2rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: .5rem;
+}
+
+.enter{
+    padding: .4rem 2rem;
+    background-color: rgb(0, 140, 255);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.container p{
+    line-height: 2.5rem;
+}
+
+hr{
+    margin: 0 3rem;
+}
+
+.Questions{
+    height: 2.5rem;
+    width: 250px;
+    justify-content: center;
+    background-color: rgb(209, 229, 247);
+    border: 2px solid rgb(0, 140, 255);
+    border-radius: 5px;
+    text-align: center;
+    color: black;
+    margin: 0  1.5rem 2rem;
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+#timer{
+    left: 0;
+}
+
+#score{
+    right: 0;
+}
+
+.ques{
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 3rem;
+    line-height: 1rem;
+}
+
+.option{
+    height: 2.5rem;
+    width: 300px;
+    justify-content: center;
+    border: 2px solid rgb(0, 140, 255);
+    border-radius: 15px;
+    text-align: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.option:hover{
+    background-color: rgb(0, 140, 255);
+    color: #fff;
+}
+
+#quiz-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+@media (max-width: 1090px){
+    body{
+        margin: 2rem  4rem;
+    }
+}
+
+@media (max-width: 900px){
+    body{
+        margin: 0rem;
+        background-color: white;
+    }
+    .container{
+        box-shadow: none;
+    }
+}
