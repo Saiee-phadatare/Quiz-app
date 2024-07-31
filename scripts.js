@@ -91,8 +91,6 @@ function loadQuestion(){
       <p class="ques">${questionData.question}</p>
       ${questionData.options.map((option) => `<button class="option" onclick="selectAnswer('${option}')">${option}</button>`).join('')}
   `;
-
-  document.getElementById('next-question').classList.add('hidden');
   startTimer();
 }
 
