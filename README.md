@@ -1,6 +1,5 @@
 <h1>Quiz App</h1>
 
-<hr />
 
 <h2>Features</h2>
 <ul>
